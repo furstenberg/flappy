@@ -162,9 +162,28 @@ impl State {
 
     fn main_menu(&mut self, ctx: &mut BTerm) {
         ctx.cls();
+        ctx.print_centered(
+            3,
+            "********************************************************************************",
+        );
         ctx.print_centered(5, "Welcome to Flappy Dragon");
-        ctx.print_centered(8, "(P) Play Game");
-        ctx.print_centered(9, "(Q) Quit Game");
+        ctx.print_centered(
+            7,
+            "********************************************************************************",
+        );
+
+        ctx.print_centered(9, "(P) Play Game");
+        ctx.print_centered(10, "(Q) Quit Game");
+
+        ctx.print_centered(
+            44,
+            "********************************************************************************",
+        );
+        ctx.print_centered(46, "A game by Michael Fürstenberg");
+        ctx.print_centered(
+            48,
+            "********************************************************************************",
+        );
 
         if let Some(key) = ctx.key {
             match key {
