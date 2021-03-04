@@ -179,7 +179,7 @@ impl State {
             44,
             "********************************************************************************",
         );
-        ctx.print_centered(46, "A game by Michael Fürstenberg");
+        ctx.print_centered(46, "A game by Michael F\u{fc}rstenberg");
         ctx.print_centered(
             48,
             "********************************************************************************",
