@@ -166,7 +166,7 @@ impl State {
             3,
             "********************************************************************************",
         );
-        ctx.print_centered(5, "Welcome to Flappy Dragon");
+        ctx.print_centered(5, "Welcome to Flappy Rust");
         ctx.print_centered(
             7,
             "********************************************************************************",
@@ -223,7 +223,7 @@ impl GameState for State {
 
 fn main() -> BError {
     let context = BTermBuilder::simple80x50()
-        .with_title("Flappy Dragon")
+        .with_title("Flappy Rust")
         .build()?;
 
     main_loop(context, State::new())
